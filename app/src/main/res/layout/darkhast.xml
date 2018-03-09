@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@drawable/a">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layoutDirection="rtl"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+
+        <TextView
+            android:id="@+id/text_view_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/fabspeeddial1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        app:fabGravity="bottom_end"
+        app:fabMenu="@menu/menu2"
+        app:fabBackgroundTint="@color/colorPrimaryDark"
+        app:miniFabDrawableTint="@color/colorPrimaryDark"
+        app:miniFabTitleTextColor="@color/colorPrimaryDark"
+
+        >
+
+    </io.github.yavski.fabspeeddial.FabSpeedDial>
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/fabspeeddial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        app:fabGravity="bottom_start"
+        app:fabMenu="@menu/menu3"
+        app:fabBackgroundTint="@color/colorPrimaryDark"
+        app:miniFabDrawableTint="@color/colorPrimaryDark"
+        app:miniFabTitleTextColor="@color/colorPrimaryDark"
+
+        >
+
+    </io.github.yavski.fabspeeddial.FabSpeedDial>
+
+
+
+</FrameLayout>
